@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWAPPY - Skill Swap Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/index.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Swappy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Explore</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Discover
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Header Section -->
+    <section class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-3">Swappy</h1>
+            <p class="lead mb-0">Swap Skills. Share Knowledge. Grow Together.</p>
+            <p class="text-muted mt-2">Connect with learners and experts in your community</p>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" style="height: 500px; overflow: hidden;">
+            <div class="carousel-item active h-100">
+                <img src="/swappy%201.png" class="d-block w-100 h-100 object-fit-cover" alt="Swappy Slide 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <div style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 8px;">
+                        <h2 class="display-5 fw-bold">Smarter Solutions</h2>
+                        <p class="lead">A brighter tomorrow.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item h-100">
+                <img src="/swappy%202.png" class="d-block w-100 h-100 object-fit-cover" alt="Swappy Slide 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <div style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 8px;">
+                        <h2 class="display-5 fw-bold">Share & Learn</h2>
+                        <p class="lead">Connect with our community.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item h-100">
+                <img src="/swappy%203.png" class="d-block w-100 h-100 object-fit-cover" alt="Swappy Slide 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <div style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 8px;">
+                        <h2 class="display-5 fw-bold">Start Your Journey</h2>
+                        <p class="lead">Swap skills, build connections.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Content Cards Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="fw-bold mb-3">Why Choose Swappy?</h2>
+                    <p class="text-muted">Learn new skills, share your expertise, and grow together with our community</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <i class="bi bi-book"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#0d6efd" viewBox="0 0 16 16">
+                                    <path d="M1 2.5A2.5 2.5 0 0 1 3.5 0h8A2.5 2.5 0 0 1 14 2.5v11a2.5 2.5 0 0 1-2.5 2.5h-8A2.5 2.5 0 0 1 1 13.5v-11zM3.5 1A1.5 1.5 0 0 0 2 2.5v11A1.5 1.5 0 0 0 3.5 15h8a1.5 1.5 0 0 0 1.5-1.5v-11A1.5 1.5 0 0 0 11.5 1h-8z"/>
+                                </svg>
+                            </div>
+                            <h5 class="card-title fw-bold">Learn New Skills</h5>
+                            <p class="card-text text-muted">Access a wide range of skills taught by passionate experts in our community. Master anything from coding to cooking.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#198754" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                                </svg>
+                            </div>
+                            <h5 class="card-title fw-bold">Share Your Expertise</h5>
+                            <p class="card-text text-muted">Teach others what you know best. Help the community grow while building your reputation and experience.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#fd7e14" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                </svg>
+                            </div>
+                            <h5 class="card-title fw-bold">Zero Cost Exchange</h5>
+                            <p class="card-text text-muted">No money needed. Swap your skills fairly with others. Build meaningful connections without financial barriers.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#0dcaf0" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M8 4a.5.5 0 0 0-.5.5v5.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5A.5.5 0 0 0 8 4z"/>
+                                </svg>
+                            </div>
+                            <h5 class="card-title fw-bold">Grow Together</h5>
+                            <p class="card-text text-muted">Join a vibrant community of learners and teachers. Track your progress and unlock new opportunities every day.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Skills Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="fw-bold mb-3">Popular Skills on Swappy</h2>
+                    <p class="text-muted">Discover skills that thousands of members are learning and sharing</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Card 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#6f42c1" viewBox="0 0 16 16">
+                                    <path d="M7 6V0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V9h-5a3 3 0 0 1-3-3z"/>
+                                    <path d="M15 1V0l-1 1-1-1V0l1 1 1-1V1z" fill="#6f42c1"/>
+                                </svg>
+                            </div>
+                            <h5 class="card-title fw-bold">Programming & Web Development</h5>
+                            <p class="card-text text-muted">Learn JavaScript, Python, React, and more. Build projects with experienced developers.</p>
+                            <span class="badge bg-primary">5,234 Members</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#e83e8c" viewBox="0 0 16 16">
+                                    <path d="M6.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM4 4a2 2 0 0 1 4 0v5a2 2 0 0 1-4 0V4zm6.5-1.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0zM7.5 4a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0zm1.5.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"/>
+                                </svg>
+                            </div>
+                            <h5 class="card-title fw-bold">Creative & Design</h5>
+                            <p class="card-text text-muted">Graphic design, photography, illustration. Express your creativity and learn from artists.</p>
+                            <span class="badge bg-danger">3,892 Members</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#20c997" viewBox="0 0 16 16">
+                                    <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-5a2 2 0 0 0-2-2z"/>
+                                </svg>
+                            </div>
+                            <h5 class="card-title fw-bold">Business & Entrepreneurship</h5>
+                            <p class="card-text text-muted">Marketing, sales, finance. Master business skills from industry professionals.</p>
+                            <span class="badge bg-success">2,567 Members</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#ffc107" viewBox="0 0 16 16">
+                                    <path d="M9.5 12.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-6a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-6a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                </svg>
+                            </div>
+                            <h5 class="card-title fw-bold">Languages & Communication</h5>
+                            <p class="card-text text-muted">English, Spanish, Mandarin. Improve language skills through conversational exchange.</p>
+                            <span class="badge bg-warning text-dark">4,123 Members</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#17a2b8" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                </svg>
+                            </div>
+                            <h5 class="card-title fw-bold">Health & Wellness</h5>
+                            <p class="card-text text-muted">Fitness, nutrition, mindfulness. Learn healthy habits from certified professionals.</p>
+                            <span class="badge bg-info">2,845 Members</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 10 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#6c757d" viewBox="0 0 16 16">
+                                    <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm-3 7a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v3H5v-3z"/>
+                                </svg>
+                            </div>
+                            <h5 class="card-title fw-bold">Hobbies & Lifestyle</h5>
+                            <p class="card-text text-muted">Cooking, music, crafts. Explore passions and connect with hobbyist communities.</p>
+                            <span class="badge bg-secondary">3,456 Members</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Getting Started Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="fw-bold mb-3">How It Works</h2>
+                    <p class="text-muted">Get started in 3 simple steps</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Step 1 -->
+                <div class="col-md-4">
+                    <div class="card text-center h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <span class="badge bg-primary" style="font-size: 24px; padding: 15px 25px;">1</span>
+                            </div>
+                            <h5 class="card-title fw-bold">Create Your Profile</h5>
+                            <p class="card-text text-muted">Sign up and tell us about skills you want to learn and skills you can teach.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="col-md-4">
+                    <div class="card text-center h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <span class="badge bg-success" style="font-size: 24px; padding: 15px 25px;">2</span>
+                            </div>
+                            <h5 class="card-title fw-bold">Find Your Match</h5>
+                            <p class="card-text text-muted">Browse our community and connect with people who have skills you want.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="col-md-4">
+                    <div class="card text-center h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <span class="badge bg-warning text-dark" style="font-size: 24px; padding: 15px 25px;">3</span>
+                            </div>
+                            <h5 class="card-title fw-bold">Start Swapping</h5>
+                            <p class="card-text text-muted">Schedule sessions and begin your skill exchange journey today!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="swappy-footer" id="footer">
+        <div class="container">
+
+            <!-- Newsletter band -->
+            <div class="footer-newsletter row align-items-center g-3">
+                <div class="col-lg-6">
+                    <h5 class="footer-newsletter-title mb-1">Get skill-swap ideas in your inbox</h5>
+                    <p class="mb-0 small">New skills, community events and member spotlights. No spam, unsubscribe anytime.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex flex-column flex-sm-row gap-2">
+                        <a class="btn btn-primary" href="/seeker/register">Join the SWAPPY community</a>
+                        <a class="btn btn-outline-light" href="/provider/register">Offer a skill</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main columns -->
+            <div class="row gy-5 footer-main">
+                <div class="col-lg-4 col-md-12">
+                    <a href="#top" class="footer-brand">Swappy</a>
+                    <p class="footer-tagline mt-3">Swap skills. Share knowledge. Grow together. A community where what you know is the only currency you need.</p>
+                    <div class="footer-social d-flex gap-2 mt-4">
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.166 1.791.166v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.491-.047 3.293 3.293 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/></svg>
+                        </a>
+                        <a href="#" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 15 0 14.487 0 13.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-6 col-md-3">
+                    <h6 class="footer-heading">Explore Skills</h6>
+                    <ul class="footer-links list-unstyled mb-0">
+                        <li><a href="#">Programming &amp; Web</a></li>
+                        <li><a href="#">Creative &amp; Design</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Languages</a></li>
+                        <li><a href="#">Health &amp; Wellness</a></li>
+                        <li><a href="#">Hobbies &amp; Lifestyle</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-6 col-md-3">
+                    <h6 class="footer-heading">Community</h6>
+                    <ul class="footer-links list-unstyled mb-0">
+                        <li><a href="#">Browse Members</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Become a Mentor</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-6 col-md-3">
+                    <h6 class="footer-heading">Support</h6>
+                    <ul class="footer-links list-unstyled mb-0">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Safety Tips</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-6 col-md-3">
+                    <h6 class="footer-heading">Company</h6>
+                    <ul class="footer-links list-unstyled mb-0">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Partnerships</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom bar -->
+            <div class="footer-bottom d-flex flex-column flex-lg-row align-items-lg-center justify-content-between gap-3">
+                <p class="mb-0 small">&copy; <span id="footerYear">2026</span> Swappy. All rights reserved.</p>
+                <ul class="footer-legal list-unstyled d-flex flex-wrap gap-3 mb-0 small">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <label for="footerLang" class="visually-hidden">Language</label>
+                    <select id="footerLang" class="form-select form-select-sm footer-lang">
+                        <option selected>English</option>
+                        <option>Español</option>
+                        <option>Français</option>
+                        <option>Deutsch</option>
+                    </select>
+                    <a href="#top" class="footer-top" aria-label="Back to top">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>document.getElementById('footerYear').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>

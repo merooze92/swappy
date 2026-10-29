@@ -1,0 +1,537 @@
+/* ===============================================
+   SWAPPY - Skill Swap Platform
+   Main CSS Stylesheet
+   =============================================== */
+
+/* ===============================================
+   GENERAL STYLES
+   =============================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+a {
+    transition: all 0.3s ease;
+}
+
+/* ===============================================
+   CAROUSEL STYLES
+   =============================================== */
+
+.carousel {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.carousel-inner {
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.carousel-item {
+    position: relative;
+    min-height: 500px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-caption {
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    padding: 0;
+}
+
+.carousel-caption div {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.carousel-caption h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-caption p {
+    font-size: 1.25rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto;
+    background: none;
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.carousel-indicators {
+    bottom: 20px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin: 0 6px;
+}
+
+.carousel-indicators .active {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* ===============================================
+   RESPONSIVE CAROUSEL
+   =============================================== */
+
+@media (max-width: 768px) {
+    .carousel-item {
+        min-height: 300px;
+    }
+
+    .carousel-caption h2 {
+        font-size: 1.75rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+
+    .carousel-caption div {
+        padding: 15px;
+    }
+}
+
+/* ===============================================
+   CARD STYLES
+   =============================================== */
+
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-title {
+    color: #2c3e50;
+    font-size: 1.1rem;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* ===============================================
+   BADGE STYLES
+   =============================================== */
+
+.badge {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    border-radius: 20px;
+}
+
+/* ===============================================
+   HEADER SECTION
+   =============================================== */
+
+.header-section {
+    padding: 60px 0;
+}
+
+.header-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.header-section .lead {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* ===============================================
+   NAVIGATION BAR
+   =============================================== */
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link {
+    margin-left: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0d6efd !important;
+}
+
+.navbar-nav .nav-link.active {
+    color: #0d6efd !important;
+}
+
+/* ===============================================
+   FOOTER STYLES
+   Layout inspired by skill/marketplace sites such as
+   Skillshare and Fiverr: brand + link columns + legal bar
+   =============================================== */
+
+.swappy-footer {
+    background-color: #1a1a1a;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 0;
+}
+
+/* Rainbow accent line, matching the icon colours used on the cards */
+.swappy-footer::before {
+    content: "";
+    display: block;
+    height: 4px;
+    background: linear-gradient(90deg, #0d6efd, #6f42c1, #e83e8c, #ffc107, #20c997);
+}
+
+/* Newsletter band */
+.footer-newsletter {
+    padding: 3rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer-newsletter-title {
+    color: #fff;
+    font-weight: 700;
+}
+
+.swappy-footer .form-control {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.swappy-footer .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.swappy-footer .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.swappy-footer .btn-primary {
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* Main columns */
+.footer-main {
+    padding: 3.5rem 0;
+}
+
+.footer-brand {
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.footer-brand:hover {
+    color: #fff;
+}
+
+.footer-tagline {
+    max-width: 320px;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.footer-heading {
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.footer-links li {
+    margin-bottom: 0.4rem;
+}
+
+.footer-links a,
+.footer-legal a {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.footer-links a:hover {
+    color: #fff;
+    transform: translateX(3px);
+}
+
+.footer-legal a {
+    font-size: 0.85rem;
+}
+
+.footer-legal a:hover {
+    color: #fff;
+}
+
+/* Social icons */
+.footer-social a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+.footer-social a:hover {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    transform: translateY(-3px);
+}
+
+/* Bottom bar */
+.footer-bottom {
+    padding: 1.5rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer-lang {
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.footer-lang:focus {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-color: #0d6efd;
+    color: #fff;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.footer-lang option {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.footer-top {
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.footer-top:hover {
+    color: #fff;
+    background-color: #0d6efd;
+}
+
+.swappy-footer a:focus-visible {
+    outline: 2px solid #0d6efd;
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .footer-newsletter {
+        padding: 2rem 0;
+    }
+
+    .footer-main {
+        padding: 2.5rem 0;
+    }
+}
+
+/* ===============================================
+   SECTION STYLES
+   =============================================== */
+
+section {
+    padding: 4rem 0;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+section .text-muted {
+    font-size: 1.1rem;
+    color: #6c757d !important;
+}
+
+/* ===============================================
+   UTILITY CLASSES
+   =============================================== */
+
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.transition {
+    transition: all 0.3s ease;
+}
+
+.hover-text-white:hover {
+    color: #fff !important;
+}
+
+/* ===============================================
+   TEXT STYLES
+   =============================================== */
+
+.display-3 {
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+.display-5 {
+    font-weight: 700;
+}
+
+.fw-bold {
+    font-weight: 700 !important;
+}
+
+/* ===============================================
+   BACKGROUND COLORS
+   =============================================== */
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.bg-dark {
+    background-color: #1a1a1a !important;
+}
+
+/* ===============================================
+   RESPONSIVE DESIGN
+   =============================================== */
+
+@media (max-width: 768px) {
+    section {
+        padding: 2.5rem 0;
+    }
+
+    section h2 {
+        font-size: 1.75rem;
+    }
+
+    .header-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-section .lead {
+        font-size: 1.1rem;
+    }
+
+    .navbar-nav .nav-link {
+        margin-left: 0;
+        padding: 0.5rem 0;
+    }
+}
+
+/* ===============================================
+   ANIMATIONS
+   =============================================== */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* ===============================================
+   CUSTOM SCROLLBAR
+   =============================================== */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
