@@ -2,7 +2,7 @@
 
 SWAPPY is a skill-swap platform. The React/Vite frontend is in `frontend/`; the Express and MongoDB API is in `backend/`.
 
-For a beginner-friendly explanation of the project files, technology, forms, and API flow, see [SWAPPY_Project_Guide_Roman_Urdu.docx](./SWAPPY_Project_Guide_Roman_Urdu.docx).
+
 
 ## Setup
 
